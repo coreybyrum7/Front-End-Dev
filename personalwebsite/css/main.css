@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: solid rgba(0, 0, 0 , 0.3);
 }
 
 /* HTML5 DECLARATIONS */
@@ -26,7 +26,7 @@ h1 {margin: 0; font-size: 3.75em; line-height: 1.2em; margin-bottom: 0.4em} /* 6
 h2 {margin: 0; font-size: 3em; line-height: 1em; margin-bottom: 0.5em} /* 48px / 48px */
 h3 {margin: 0; font-size: 2.25em; line-height: 1.3333333333333333333333333333333em; margin-bottom: 0.6667em} /* 36px / 48px */ 
 h4 {margin: 0; font-size: 1.5em; line-height: 1em; margin-bottom: 1em} /* 24px / 24px */
-h5 {margin: 0; font-size: 1.3125em; line-height: 1.1428571428571428571428571428571em; margin-bottom: 1.1428571428571428571428571428571em} /* 21px / 24px */
+h5 {margin: 0; font-size: 1.17em; line-height: 1.1428571428571428571428571428571em; margin-bottom: 1.1428571428571428571428571428571em} /* 21px / 24px */
 h6 {margin: 0; font-size: 1.125em; line-height: 1.3333333333333333333333333333333em; margin-bottom: 1.3333333333333333333333333333333em} /* 18px / 24px */
 p, ul, blockquote, pre, td, th, label {margin: 0; font-size: 1em; line-height: 1.5em; margin-bottom: 1.5em} /* 16px / 24px */
 small, p.small {margin: 0; font-size: 0.875em; line-height: 1.7142857142857142857142857142857em; margin-bottom: 1.7142857142857142857142857142857em} /* 14px / 24px */
@@ -60,9 +60,77 @@ blockquote, q, cite {font-style: italic}
 blockquote {padding-left: 1.5em; border-left: 3px solid #ccc}
 blockquote > p {padding: 0}
 
+/* TAB */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+* { 
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+html, body {
+  background:#FFFFFF;
+}
+
+.acc-container {
+  width:90%;
+  margin:20px auto 0 auto;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  -o-border-radius:6px;
+  border-radius:6px;
+  overflow:hidden;
+}
+
+.acc-btn { 
+  width:100%;
+  margin:0 auto;
+  padding:12px 17px;
+  cursor:pointer;
+  background:#34495E;
+  border-bottom:1px solid #2C3E50;
+}
+
+.acc-content {
+  height:0px;
+  width:100%;
+  margin:0 auto;
+  overflow:hidden;
+  background:#2C3E50;
+}
+
+.acc-content-inner {
+  padding:30px;
+}
+
+.open {
+  height: auto;
+}
+
+h1 {
+  font:700 13px/18px 'Lato', sans-serif;
+  color:#ffffff;
+}
+
+p { 
+  font:400 14px/20px 'Source Sans Pro', sans-serif;
+  color:#161a1d;
+}
+
+.p-container { 
+  font:400 13px/20px 'Lato', sans-serif;
+  color:#ffffff;
+}
+
+.selected {
+  color:#1ABC9C;
+}
+
 /* LISTS */
 ul, ol {list-style-position: inside; padding: 0}
-li ul, li ol {margin: 0 1.5em}
+li ul, li ol {margin-top: 0px; margin-left: 20px; margin-bottom: 0px}
 dl dd {margin-left: 1.5em}
 dt {font-family:Futura, "Century Gothic", AppleGothic, sans-serif}
 
@@ -162,8 +230,9 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 /* Backgrounds */
 
 .bg-1{
-  background-image: url('../images/background.png');
-}
+  background-image: url('../images/background1.png');
+  width: 100%;
+  }
 
 /* Header */
 #header{
@@ -614,7 +683,7 @@ footer{
   text-align: center;
   margin-top: 2em;
   padding: 10px;
-  background: rgba(255, 255, 255,.8);
+  background: rgba(255, 255, 255,.9);
   box-shadow: 0px 4px #ccc;
   color: #333;
   -moz-border-radius: 4px;
